@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dist/css/bootstrap.css">
+    <script src="jquery/jquery-3.4.1.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <style>
+        #img {
+            margin-top: -20px;
+        }
+
+        .navbar-right {
+            margin-right: 10px;
+        }
+
+        .search {
+            background-image: url('images/banner.jpg');
+            background-size: cover;
+            margin-top: -20px;
+            min-height: 600px;
+        }
+
+        .wrap {
+            padding: 60px 60px;
+            width: 50%;
+            background: rgba(255, 255, 255, 0.7);
+            margin: 0 auto;
+            margin-top: 15%;
+            font-weight: 500;
+            color: #f2f0f1;
+            font-size: 1.2em;
+            outline: none;
+        }
+
+        /* #f1{
+            margin-top: 40px;
+        } */
+        .btn {
+            width: 50%;
+            background: #D96B66;
+            color: #fff;
+            padding: 5px;
+            text-align: center;
+        }
+
+        .b1 {
+            /* border: 1px solid gray; */
+            color: honeydew;
+            /* background-color: gray; */
+        }
+
+        #ppp:hover {
+            /* border: 1px solid gray; */
+            border-radius: 10px;
+            color: white;
+            background-color: #D96B66;
+            transition: 0.5 all ease;
+        }
+
+        .biaoqian {
+            /* float: right; */
+            border: 1px solid gray;
+
+            margin-left: 10px;
+        }
+        .wei{
+            background-color:  #D96B66;
+            height: 70px;
+            color: white;
+        }
+        #io{
+            text-decoration:  #D96B66;
+            color: white;
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class=2 style="background-color: seagreen;height: 20px; ">
+
+    </div>
+
+    <div>
+
+        <nav class="navbar navbar-default" role="navigation">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="navbar-header ">
+                <a class="navbar-brand" id="nav-brand-itheima" href="#"><img src="images/logo.png" id=img alt=""></a>
+            </div>
+            <div id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active b1"><a href="##">系列教程</a></li>
+                    <li><a class="b1" id="ppp" href="##">成功案例</a></li>
+                    <li><a class="b1" id="ppp" href="##">名师介绍</a></li>
+                    <li><a class="b1" id="ppp" href="##">关于我们</a></li>
+                </ul>
+                <div class="nav navbar-right">
+                    <h4>￥1.00 <a href="#"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a>
+                    </h4>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="search">
+        <div class="container">
+            <div class="wrap">
+                <form class="form-horizontal" role="form" id="f1">
+                    <div class="form-group">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <input type="text" class="form-control input-lg" id="name" placeholder="请输入餐厅名称">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <select class="form-control input-lg" id="country">
+                                <option value="null">请选择城市</option>
+                                <option value="sh">上海</option>
+                                <option value="nc">南昌</option>
+                                <option value="zz">郑州</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class=" searchbtn">
+                            <button type="submit" class=" col-sm-offset-3 btn btn-success btn-lg"> <img
+                                    src="images/search-icon.png" alt="">
+                                &nbsp;搜索</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="hot">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <h3>米西奈斯煎饼</h3>
+                    <hr>
+                    <img src="images/4.jpg" alt="" class="img-responsive">
+                    <p class="glyphicon glyphicon-thumbs-up">两种口味可供选择</p><br>
+                    <a href="#"><button type="button" class="btn btn-success">添加到购物车</button></a>
+                    <span>
+                        <h4>一口价：￥45.00</h4>
+                    </span>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <h3>蒙特斯大虾</h3>
+                    <hr size="10px">
+                    <img src="images/1.jpg" alt="" class="img-responsive">
+                    <p class="glyphicon glyphicon-thumbs-up">两种口味可供选择</p><br>
+                    <button type="button" class="btn btn-success">添加到购物车</button>
+                    <span>
+                        <h4>一口价：￥55.00</h4>
+                    </span>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <h3>香酥鸡排</h3>
+                    <hr>
+                    <img src="images/3.jpg" alt="" class="img-responsive">
+                    <p class="glyphicon glyphicon-thumbs-up">两种口味可供选择</p><br>
+
+                    <button type="button" class="btn btn-success">添加到购物车</button>
+
+                    <span>
+                        <h4>一口价：￥65.00</h4>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="biaoqian">
+    <ul class="nav nav-tabs">
+        <li role="presentation" class="active" ><a href="#cp" id="caipin">菜品</a></li>
+        <li role="presentation"><a href="#yp" id="yinpin">饮品</a></li>
+        <li role="presentation"><a href="#zs" id="zhushi">主食</a></li>
+      </ul>
+   </div> -->
+    <div class="container">
+        <div class="biaoqian">
+
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#home" id="ppp" aria-controls="home" role="tab"
+                        data-toggle="tab">菜品</a></li>
+                <li role="presentation"><a id="ppp" href="#profile" aria-controls="profile" role="tab"
+                        data-toggle="tab">饮品</a>
+                </li>
+                <li role="presentation"><a id="ppp" href="#messages" aria-controls="messages" role="tab"
+                        data-toggle="tab">主食</a>
+                </li>
+
+            </ul>
+            <img src="images/title.jpg" alt="">
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="home">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+                                <hr>
+                                <img src="images/small01.jpg" alt="" class="img-responsive">
+                                <span>
+                                    <h4>￥45.00</h4>
+                                </span>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+                                <hr>
+                                <img src="images/small02.jpg" alt="" class="img-responsive">
+                                <span>
+                                    <h4>￥45.00</h4>
+                                </span>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+                                <hr>
+                                <img src="images/small04.jpg" alt="" class="img-responsive">
+                                <span>
+                                    <h4>￥45.00</h4>
+                                </span>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+                                <hr>
+                                <img src="images/small02.jpg" alt="" class="img-responsive">
+                                <span>
+                                    <h4>：￥45.00</h4>
+                                </span>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+                                <hr>
+                                <img src="images/small07.jpg" alt="" class="img-responsive">
+                                <span>
+                                    <h4>￥45.00</h4>
+                                </span>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+                                <hr>
+                                <img src="images/small08.jpg" alt="" class="img-responsive">
+                                <span>
+                                    <h4>￥45.00</h4>
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div role="tabpanel" class="tab-pane" id="profile">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+                                <hr>
+                                <img src="images/small03.jpg" alt="" class="img-responsive">
+                                <span>
+                                    <h4>￥45.00</h4>
+                                </span>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+                                <hr>
+                                <img src="images/small03.jpg" alt="" class="img-responsive">
+                                <span>
+                                    <h4>￥45.00</h4>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div role="tabpanel" class="tab-pane" id="messages">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+                                <hr>
+                                <img src="images/small05.jpg" alt="" class="img-responsive">
+                                <span>
+                                    <h4>￥45.00</h4>
+                                </span>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+                                <hr>
+                                <img src="images/small06.jpg" alt="" class="img-responsive">
+                                <span>
+                                    <h4>￥45.00</h4>
+                                </span>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+                                <hr>
+                                <img src="images/small09.jpg" alt="" class="img-responsive">
+                                <span>
+                                    <h4>￥45.00</h4>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <!-- <img src="" alt="..."> -->
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+                            <hr>
+                            <img src="images/8p.jpg" alt="" class="img-responsive">
+
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+                            <hr>
+                            <img src="images/1p.jpg" alt="" class="img-responsive">
+
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+                            <hr>
+                            <img src="images/2p.jpg" alt="" class="img-responsive">
+
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+                            <hr>
+                            <img src="images/3p.png" alt="" class="img-responsive">
+
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+                            <hr>
+                            <img src="images/4p.jpg" alt="" class="img-responsive">
+
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+                            <hr>
+                            <img src="images/5p.jpg" alt="" class="img-responsive">
+
+                        </div>
+                    </div>
+                    <div class="carousel-caption">
+                        
+                    </div>
+                </div>
+                <div class="item">
+                    <!-- <img src="1p.jpg" alt="..."> -->
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+                            <hr>
+                            <img src="images/1p.jpg" alt="" class="img-responsive">
+
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+                            <hr>
+                            <img src="images/2p.jpg" alt="" class="img-responsive">
+
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+                            <hr>
+                            <img src="images/3p.png" alt="" class="img-responsive">
+
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+                            <hr>
+                            <img src="images/4p.jpg" alt="" class="img-responsive">
+
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+                            <hr>
+                            <img src="images/5p.jpg" alt="" class="img-responsive">
+
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+                            <hr>
+                            <img src="images/6p.jpg" alt="" class="img-responsive">
+
+                        </div>
+                    </div>
+                    <div class="carousel-caption">
+                        ...
+                    </div>
+                </div>
+                
+                <div class="item">
+                    <!-- <img src="1p.jpg" alt="..."> -->
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+                            <hr>
+                            <img src="images/3p.png" alt="" class="img-responsive">
+
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+                            <hr>
+                            <img src="images/4p.jpg" alt="" class="img-responsive">
+
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+                            <hr>
+                            <img src="images/5p.png" alt="" class="img-responsive">
+
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+                            <hr>
+                            <img src="images/6p.jpg" alt="" class="img-responsive">
+
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+                            <hr>
+                            <img src="images/7p.jpg" alt="" class="img-responsive">
+
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+                            <hr>
+                            <img src="images/8p.jpg" alt="" class="img-responsive">
+
+                        </div>
+                    </div>
+                    <div class="carousel-caption">
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <!-- <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> -->
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <!-- <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> -->
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <div class="wei">
+        <p><h3><a href="#" id="io"><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>联系我们&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;</a>
+            &nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;<a href="#" id="io"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>公司地址&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;</a>
+            &nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;<a href="#" id="io"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>服务声明&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;</a></h3></p>
+        <span>Copyright © 2016 BootStrap 响应式餐饮网站| 版权所有</span>
+    </div> 
+</body>
+
+</html>
